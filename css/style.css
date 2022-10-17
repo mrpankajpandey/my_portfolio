@@ -850,12 +850,19 @@ h3.my-profession
         max-width: 100%;
     }
  }
-@media(max-width:450px)
+@media(max-width:530px){
+   .about .about-text h3.my-profession-about {
+        font-size: 20px;
+        margin: 15px 0;
+
+    }
+}
+ @media(max-width:460px)
  {
- h3.hello span,   
+ h3.hello ,   
  h3.hello span
  {
-    font-size: 20px;
+    font-size: 30px;
     margin: 15px 0;
  }
  h3.my-profession span{
@@ -881,11 +888,40 @@ h3.my-profession
     }
 }
 @media (max-width:360px){
-    h3.my-profession span,
-    h3.my-profession-about{
-        font-size: 20px;
+    h3.my-profession span{
+        font-size: 18px;
         margin: 15px 0;
      }
+   .about .about-text h3.my-profession-about span  {
+     font-size: 13px;
+     margin: 12px 0;
+     
+    } 
+}
+@media(max-width:332px){
+    h3.my-profession{
+        font-size: 16px;
+        margin: 12px 0;
+
+    }
+    .about .about-text h3.my-profession-about{
+        font-size: 13px;
+        margin: 10px 0;
+    }
+   .about .about-text h3.my-profession-about span{
+               font-size: 12px;
+               margin: 12px 0;
+    }
+}
+@media(max-width:301px){
+     .about .about-text h3.my-profession-about 
+     {
+        font-size: 10px;
+        margin: 10px 0;
+    }
+    h3.my-profession-about span{
+        font-size: 10px;
+    }
 }
 @media(max-width:280px){
     h3.hello,   
