@@ -947,3 +947,11 @@ h3.my-profession
     }
 
 }
+#preloader{
+    background: white  url(/img/loader.gif) no-repeat center center;
+    height: 100vh;
+    background-size: 30%;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+ }
