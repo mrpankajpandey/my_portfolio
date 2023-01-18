@@ -68,7 +68,7 @@ totalSection = allSection.length;
                 }
             }
     /* preloader */
-    var loader= document.getElementById("loader");
+    var loader= document.getElementById("preloader");
     window.addEventListener("load", function(){
         loader.style.display="none";
     })
