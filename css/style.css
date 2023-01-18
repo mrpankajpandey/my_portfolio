@@ -948,7 +948,7 @@ h3.my-profession
 
 }
 #preloader{
-    background: white url(loader.gif) no-repeat center center;
+    background: white;
     height: 100vh;
     background-size: 35%;
     width: 100%;
