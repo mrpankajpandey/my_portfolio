@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" href="img/hero.jpeg">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login || mr_pankajpandey</title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous">
+    </script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <style>
+        #alert{
+            display: none;
+        }
+        body {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+            background: rgb(211, 213, 213);
+        }
+
+        .row {
+            background: white;
+            border-radius: 30px;
+            /* border-top-right-radius: 30px;
+        border-bottom-right-radius: 30px; */
+            /* box-shadow: 12px 12px 22px grey ; */
+        }
+
+        img {
+            border-top-left-radius: 20px;
+            border-bottom-left-radius: 20px;
+
+        }
+
+        .bt1 {
+            border: none;
+            outline: none;
+            height: 50px;
+            width: 100%;
+            background-color: black;
+            color: white;
+            border-radius: 4px;
+            font-weight: bold;
+        }
+
+        .bt1.bt1:hover {
+            background-color: white;
+            border: 1px solid;
+            color: black;
+        }
+    </style>
+</head>
+
+<body>
+    
+    <nav class="navbar bg-dark navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><span class="blockquote" >P</span>Ankaj</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Login</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" target="_blank" href="https://github.com/mrpankajpandey">About Us</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Profile's
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" target="_blank" href="https://codepen.io/mr_pankajpandey">Code
+                                    Pen</a></li>
+                            <li><a class="dropdown-item" target="_blank" href="#">LinkedIn</a></li>
+                            <li><a class="dropdown-item" target="_blank"
+                                    href="https://github.com/mrpankajpandey">Git-hub</a></li>
+                            <li><a class="dropdown-item" target="_blank"
+                                    href="https://twitter.com/mrpankajpandey_">twitter</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" target="_blank" href="https://linktr.ee/mr_pankajpandey_">Others</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled">Contact Us</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <div id="alert" class="alert alert-warning alert-dismissible fade show " role="alert">
+        <strong>Hy Bored!</strong>InValid credentials <strong style="color: red;">!!</strong>.
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+      </div>
+
+    <div class="container">
+        <section class="form my-4 mx-4">
+            <div class="container">
+                <div class="row gx-0">
+                    <div class="col-lg-5">
+                        <img src="https://source.unsplash.com/700x1200/?coder,software,tech" class="img-fluid" alt="">
+                    </div>
+
+                    <div class="col-lg-7 px-5 pt-5">
+                        <h1 class="font-weight-bold py-3">Login</h1>
+                        <h4>Sign your account</h4>
+                        <form action="0">
+                            <div class="form-row">
+                                <div class="col-lg-7 form-floating">
+                                    <input type="email" name="" class="form-control my-3 " id="floatingInput" required="true" onchange=""
+                                        placeholder="Email">
+                                    <label for="floatingInput">Email address</label>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="col-lg-7 form-floating">
+                                    <input type="password" class="form-control my-3 " name="" id="txtPassword"
+                                        placeholder="password">
+                                    <label for="floatingPassword">Password</label>
+                                </div>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" onclick="showPassword()" type="checkbox" value=""
+                                    id="flexCheckChecked">
+                                <label class="form-check-label" for="flexCheckChecked">
+                                    Show-Password
+                                </label>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="col-lg-7 form-floating">
+                                    <input type="text" readonly="true" class="form-control my-3  text-center fs-3 p-4"
+                                        name="" id="mainCaptcha" placeholder="password">
+                                    <label for="floatingText"></label>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="col-lg-7 form-floating">
+                                    <input type="text" oninput="checkvalidCaptcha()" onfocus="generateCaptcha()"
+                                        class="form-control " name="" id="txtinput" placeholder="">
+                                    <label for="floatingPassword">Captach</label>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="col-lg-7">
+                                    <button type="button" onclick="alertt()" id="lgnbtn"
+                                        class="bt1 mt-3 mb-5">Login</button>
+                                </div>
+                            </div>
+                            <a href="">forgot password</a>
+                            <p>Don't have account <a href="">register here</a> </p>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <footer class="py-4 bg-light mt-auto">
+        <div class="container-fluid ">
+
+            <div class="d-flex align-items-center justify-content-between small">
+                <div class="text-muted mx-5 fs-4">Copyright &copy; Pankaj
+                2023
+                </div>
+
+                <div>
+                    <p align="left" style="margin-top: 30px;">
+                        <a href="https://codepen.io/mr_pankajpandey" target="blank"><img align="center"
+                                src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/codepen.svg"
+                                alt="mr_pankajpandey" height="30" width="40" /></a>
+                        <a href="https://twitter.com/mrpankajpandey_" target="blank"><img align="center"
+                                src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/twitter.svg"
+                                alt="mrpankajpandey_" height="30" width="40" /></a>
+                        <a href="https://linkedin.com/in/pankaj-kumar-pandey-187b5a222/" target="blank"><img
+                                align="center"
+                                src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg"
+                                alt="pankaj-kumar-pandey-187b5a222/" height="30" width="40" /></a>
+                        <a href="https://instagram.com/the_cybersecurity" target="blank"><img align="center"
+                                src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/instagram.svg"
+                                alt="the_cybersecurity" height="30" width="40" /></a>
+                        <a href="https://www.hackerrank.com/mr_pankajpandey1" target="blank"><img align="center"
+                                src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/hackerrank.svg"
+                                alt="mr_pankajpandey1" height="30" width="40" /></a>
+                        <a href="https://www.leetcode.com/mr_pankajpandey_" target="blank"><img align="center"
+                                src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/leet-code.svg"
+                                alt="mr_pankajpandey_" height="30" width="40" /></a>
+                        <a href="https://auth.geeksforgeeks.org/user/mrpankajpandey0038" target="blank"><img
+                                align="center"
+                                src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/geeks-for-geeks.svg"
+                                alt="mrpankajpandey0038" height="30" width="40" /></a>
+                        <a href="https://discord.gg/CcaBwzjy" target="blank"><img align="center"
+                                src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/discord.svg"
+                                alt="CcaBwzjy" height="30" width="40" /></a>
+                        <a href="https://www.w3profile.com/mrpankajpandey" target="blank"><img align="center"
+                                src="https://www.w3schools.com/images/w3schools_logo_436_2.png" alt="CcaBwzjy"
+                                height="30" width="40" /></a>
+                    </p>
+                </div>
+
+                <div class="mx-5 fs-6">
+                    <a href="#">Privacy Policy</a>
+                    &middot;
+                    <a href="#">Terms &amp; Conditions</a>
+                </div>
+            </div>
+
+
+        </div>
+    </footer>
+    <script>
+        document.getElementById('lgnbtn').disabled = true;
+
+        function showPassword() {
+            var x = document.getElementById("txtPassword");
+            if (x.type === "password") {
+                x.type = "text";
+            } else {
+                x.type = "password";
+            }
+        }
+      
+        function generateCaptcha() {
+            var cap = new Array('a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r',
+                's', 't', 'u', 'v', 'x', 'y', 'z', '1', '2', '3', '4', '5', '6', '7');
+            var i;
+            for (i = 0; i < 5; i++) {
+                var a = cap[Math.floor(Math.random() * cap.length)];
+                var b = cap[Math.floor(Math.random() * cap.length)];
+                var c = cap[Math.floor(Math.random() * cap.length)];
+                var d = cap[Math.floor(Math.random() * cap.length)];
+                var e = cap[Math.floor(Math.random() * cap.length)];
+            }
+            var code = a + b + c + d + e;
+            document.getElementById("mainCaptcha").value = code
+        }
+
+        function checkvalidCaptcha() {
+            var string1 = removeSpaces(document.getElementById('mainCaptcha').value);
+            var string2 = removeSpaces(document.getElementById('txtinput').value);
+            if (string1 == string2) {
+                // succes block
+                document.getElementById('lgnbtn').disabled = false;
+                document.getElementById('txtinput').setAttribute('class','form-control is-valid');
+
+                return true;
+            } else {
+                // fail block
+                document.getElementById('lgnbtn').disabled = true;
+                document.getElementById('txtinput').setAttribute('class','form-control is-invalid');
+                return false;
+            }
+        }
+
+        function removeSpaces(string) {
+            return string.split('').join('');
+        }
+       function alertt() {
+        document.getElementById('alert').setAttribute('style','display: block;');
+       }
+        
+    </script>
+
+</body>
+
+</html>
