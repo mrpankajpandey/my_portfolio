@@ -1,12 +1,12 @@
 /* ==============typing animatiion=========== */
 var typed =new Typed(".typing" ,{
-    strings:["","Web Designer ", "Android Development", "Socail Media Handler","Portfolio Designer ", "Freelancer"],
+    strings:["","Web Designer ", "Android Development", "Full-stack web dev", "Freelancer"],
     typedSpeed:120,
     BackSpeed:100,
     loop:true
 } )
 var typed =new Typed(".ptyping" ,{
-    strings:["","Web Designer ", "Android Development", "Socail Media Handler","Portfolio Designer", "Freelancer"],
+    strings:["","Web Designer ", "Android Development", "Full-stack web dev", "Freelancer"],
     typedSpeed:120,
     BackSpeed:100,
     loop:true
